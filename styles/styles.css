@@ -1,0 +1,83 @@
+* {box-sizing: border-box; }
+* {font-family: "arial" }
+
+.wrapper {
+  width: 80%;
+}
+button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+header {
+  background-color: rgb(3, 163, 223);
+}
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 17px;
+  font-weight: bold;
+}
+.headergrid {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+.footergrid {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+.bodygrid {
+  display: grid;
+  grid-template-columns: 1fr 3fr
+  margin: auto;
+}
+nav ul {
+  display: block;
+  text-align: right;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li a {
+  color: rgb(255,255,255);
+  text-decoration: none;
+}
+nav ul li a::after {
+  content: "\00a0\00a0/\00a0";
+}
+nav ul li:last-of-type a::after {
+  content: "";
+}
+article {
+  padding: 50px;
+  background-color: rgb(236, 183, 34);
+}
+aside {
+  padding: 50px;
+  background-color: rgb(68, 68, 68);
+  color: white
+}
+footer {
+  background-image: url("../images/footerimage.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  color: white;
+}
