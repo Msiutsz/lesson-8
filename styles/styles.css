@@ -1,6 +1,9 @@
 * {box-sizing: border-box; }
 * {font-family: "arial" }
 
+a:link {
+  color: white;
+}
 .wrapper {
   width: 80%;
 }
@@ -8,6 +11,15 @@ button {
   background-color: white;
   border: none;
   color: black;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button-register {
+  background-color: rgb(68, 68, 68);
+  border: none;
+  color: white;
   padding: 15px 25px;
   text-align: center;
   font-size: 16px;
@@ -41,9 +53,21 @@ h3 {
   align-items: center;
 }
 .bodygrid {
+  margin: auto;
   display: grid;
   grid-template-columns: 3fr 1fr;
   margin: auto;
+}
+.classgrid {
+  margin: auto;
+  display: grid;
+  padding: 50px;
+  background-color: rgb(236, 183, 34);
+}
+.instructorgrid {
+  display: grid;
+  padding: 50px;
+  background-color: rgb(68, 68, 68);
 }
 nav ul {
   display: block;
@@ -71,11 +95,38 @@ aside {
   background-color: rgb(68, 68, 68);
   color: white
 }
+table, th, td {
+  border: 1px solid black;
+  padding: 2px;
+}
 footer {
   background-image: url("../images/footerimage.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   min-height: 500px;
   padding: 50px;
+  color: white;
+}
+.instructor1{
+  text-align: center;
+  color: white;
+}
+
+.instructor2{
+  text-align: center;
+}
+
+.instructor3{
+  text-align: center;
+}
+
+.instructor4{
+  text-align: center;
+}
+.instructorgrid {
+  display:grid;
+  grid-gap: 20px;
+  height: 500px;
+  grid-template-columns: 1fr 1fr 1fr;
   color: white;
 }
